@@ -136,43 +136,43 @@
                 </tr>
             </tbody>
         </table>
-        <form action="#">
+        <form action="#" class="flex flex-col">
             <h2>Kalkulátor</h2>
             <span>Gyümölcs neve</span>
-            <select name="" id="lenyilo">
+            <select name="" id="lenyilo" class="!w-full !p-3">
                 <option value="">Válasszon egy gyümölcsöt!</option>
             </select>
             
             <span>Mennyiség</span>
-            <input type="number" value="1" min="1">
+            <input type="number" value="1" min="1" class="!w-full !p-3">
             <button id="szamitas">Számítás</button>
             <button id="visszaallitas">Visszaállítás</button>
 
-            <div class="szamitasok">
-                <div class="szamitottcella">
-                    <h3>Zsír</h3>
-                    <p></p>
-                </div>
-                <div class="szamitottcella">
-                    <h3>Rost</h3>
-                    <p></p>
-                </div>
-                <div class="szamitottcella">
-                    <h3>Kalória</h3>
-                    <p></p>
-                </div>
-                <div class="szamitottcella">
-                    <h3>Fehérje</h3>
-                    <p></p>
-                </div>
-                <div class="szamitottcella">
-                    <h3>Szénhidrát</h3>
-                    <p></p>
-                </div>
-            </div>
         </form>
-    </main>
-    
+        <div class="szamitasok">
+            <div class="szamitottcella">
+                <h3>Zsír</h3>
+                <p></p>
+            </div>
+            <div class="szamitottcella">
+                <h3>Rost</h3>
+                <p></p>
+            </div>
+            <div class="szamitottcella">
+                <h3>Kalória</h3>
+                <p></p>
+            </div>
+            <div class="szamitottcella">
+                <h3>Fehérje</h3>
+                <p></p>
+            </div>
+            <div class="szamitottcella">
+                <h3>Szénhidrát</h3>
+                <p></p>
+            </div>
+        </div>
+        </main>
+        
     
 
     <script src="./js/data.js"></script>

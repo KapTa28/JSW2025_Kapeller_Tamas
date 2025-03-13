@@ -46,5 +46,6 @@ function szamitas(){
         hiba.classList.add('p-10px', 'w-full', 'border-red-600', 'text-red-600', 'bg-red-300')
         hiba.textContent = 'Válasszon egy gyümölcsöt a lenyíló listából!'
         lenyilo.append(hiba)
+        return
     }
 }
