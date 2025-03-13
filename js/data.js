@@ -27,3 +27,24 @@ const fruits = [
         carbohydrate: 11.8
     },
 ];
+
+const lenyilo = document.getElementById('lenyilo')
+
+for (elem of fruits){
+    let option = document.createElement('option')
+    option.textContent = elem.name
+    option.value = elem.id
+    lenyilo.append(option)
+}
+
+const szamitasgomb = document.getElementById('szamitas')
+szamitasgomb.addEventListener('click', () => szamitas)
+
+function szamitas(){
+    if (lenyilo.value == ''){
+        let hiba = document.createElement('div')
+        hiba.classList.add('p-10px', 'w-full', 'border-red-600', 'text-red-600', 'bg-red-300')
+        hiba.textContent = 'Válasszon egy gyümölcsöt a lenyíló listából!'
+        lenyilo.append(hiba)
+    }
+}

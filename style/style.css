@@ -58,6 +58,10 @@ nav{
         margin-block: -3px;
     }
 }
+main{
+    width: 80%;
+    margin-inline: auto;
+}
 .kiwi{
     display: none;
     width: 250px;
@@ -94,4 +98,37 @@ td:first-child, td:nth-child(2){
 }
 form{
     margin-inline: auto;
+}
+.szamitasok{
+    display: flex;
+    gap: 1rem;
+    .szamitottcella{
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 10px;
+        text-align: center;
+        outline: double 6px;
+        border-radius: 10px;
+        color: white;
+    }
+    .szamitottcella:nth-of-type(1){
+        background-color: var(--zold);
+        outline-color: var(--zold);
+    }
+    .szamitottcella:nth-of-type(2){
+        background-color: var(--kek);
+        outline-color: var(--kek);
+    }
+    .szamitottcella:nth-of-type(3){
+        background-color: var(--turkizkek);
+        outline-color: var(--turkizkek);
+    }
+    .szamitottcella:nth-of-type(4){
+        background-color: var(--lila);
+        outline-color: var(--lila);
+    }
+    .szamitottcella:nth-of-type(5){
+        background-color: var(--piros);
+        outline-color: var(--piros);
+    }
 }
